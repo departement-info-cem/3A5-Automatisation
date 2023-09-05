@@ -14,7 +14,7 @@
    return (
      <div style={{padding: 10}}>
        <PowerShellWindow
-         url={url}
+         workdir={workdir}
          style={{
            minWidth: 'min(100%,45vw)',
            width: 800,

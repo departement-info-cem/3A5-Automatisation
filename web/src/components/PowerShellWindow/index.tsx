@@ -1,6 +1,5 @@
-import React, { type ReactNode } from "react";
+import React, { type CSSProperties, ReactNode } from "react";
 
-import "prismjs/themes/prism-dark.css";
 import CopyButton from "@theme/CodeBlock/CopyButton";
 
 import styles from "./styles.module.css";
@@ -8,14 +7,18 @@ import Logo from "./assets/logo.svg";
 
 interface Props {
   children: ReactNode;
+  workdir: string;
   command: string;
   result: string;
+  style?: CSSProperties;
 }
 
 export default function PowerShellWindow({
   children,
+  workdir,
   command,
   result,
+  style,
 }: Props): JSX.Element {
   console.log(children);
 
@@ -32,7 +35,7 @@ export default function PowerShellWindow({
 
       <div className={styles.powerShellWindowBody}>
         <div className={styles.firstLine}>
-          PS C:\Users\BennyLeChien&gt;
+          PS {workdir}&gt;
           {` ${command}`}
           <div className={styles.spacer}></div>
           <CopyButton className={styles.copyButton} code={command}></CopyButton>

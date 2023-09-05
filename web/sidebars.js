@@ -18,6 +18,11 @@ const sidebars = {
       label: "R03 - Collections et types",
       id: "cours/r03",
     },
+    {
+      type: "doc",
+      label: "R04 - Dictionnaires",
+      id: "cours/r04",
+    },
   ],
   tp: [
     { type: "doc", label: "TP1", id: "tp/tp1" },
