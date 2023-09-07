@@ -23,6 +23,11 @@ const sidebars = {
       label: "R04 - Dictionnaires",
       id: "cours/r04",
     },
+    {
+      type: "doc",
+      label: "R05 - Scripts PowerShell",
+      id: "cours/r05",
+    },
   ],
   tp: [
     { type: "doc", label: "TP1", id: "tp/tp1" },
