@@ -28,7 +28,12 @@ const sidebars = {
       label: "R05 - Scripts PowerShell",
       id: "cours/r05",
     },
-  ],
+    {
+      type: "doc",
+      label: "R06 - Paramètres et fonctions",
+      id: "cours/r06",
+    },
+],
   tp: [
     { type: "doc", label: "TP1", id: "tp/tp1" },
   ],
