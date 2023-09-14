@@ -33,6 +33,11 @@ const sidebars = {
       label: "R06 - Paramètres et fonctions",
       id: "cours/r06",
     },
+    {
+      type: "doc",
+      label: "R07 - Fichiers et strings",
+      id: "cours/r07",
+    },
 ],
   tp: [
     { type: "doc", label: "TP1", id: "tp/tp1" },
