@@ -38,6 +38,11 @@ const sidebars = {
       label: "R07 - Fichiers et strings",
       id: "cours/r07",
     },
+    {
+      type: "doc",
+      label: "R08 - Erreurs",
+      id: "cours/r08",
+    },
 ],
   tp: [
     { type: "doc", label: "TP1", id: "tp/tp1" },
