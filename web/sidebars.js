@@ -43,6 +43,11 @@ const sidebars = {
       label: "R08 - Erreurs",
       id: "cours/r08",
     },
+    {
+      type: "doc",
+      label: "R09 - Utilisateurs locaux",
+      id: "cours/r09",
+    },
 ],
   tp: [
     { type: "doc", label: "TP1", id: "tp/tp1" },
