@@ -50,7 +50,7 @@ const sidebars = {
     },
 ],
   tp: [
-    { type: "doc", label: "TP1", id: "tp/tp1" },
+    { type: "doc", label: "TP1 - Création en lot", id: "tp/tp1" },
   ],
 };
 
