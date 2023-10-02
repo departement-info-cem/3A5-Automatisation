@@ -58,6 +58,11 @@ const sidebars = {
       label: "R11 - Portée (et travail sur le TP1)",
       id: "cours/r11",
     },
+    {
+      type: "doc",
+      label: "R12 - Travail sur le Tp1",
+      id: "cours/r12",
+    },
 ],
   tp: [
     { type: "doc", label: "TP1 - Création en lot", id: "tp/tp1" },
