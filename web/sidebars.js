@@ -63,6 +63,16 @@ const sidebars = {
       label: "R12 - Travail sur le Tp1",
       id: "cours/r12",
     },
+    {
+      type: "doc",
+      label: "R13 - Révision pour l'intra",
+      id: "cours/r13",
+    },
+    {
+      type: "doc",
+      label: "R14 - EXAMEN INTRA",
+      id: "cours/r14",
+    },
 ],
   tp: [
     { type: "doc", label: "TP1 - Création en lot", id: "tp/tp1" },
