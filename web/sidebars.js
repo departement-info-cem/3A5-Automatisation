@@ -73,6 +73,11 @@ const sidebars = {
       label: "R14 - EXAMEN INTRA",
       id: "cours/r14",
     },
+    {
+      type: "doc",
+      label: "R15 - Le registre de Windows",
+      id: "cours/r15",
+    },
 ],
   tp: [
     { type: "doc", label: "TP1 - Création en lot", id: "tp/tp1" },
