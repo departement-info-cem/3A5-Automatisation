@@ -78,6 +78,11 @@ const sidebars = {
       label: "R15 - Le registre de Windows",
       id: "cours/r15",
     },
+    {
+      type: "doc",
+      label: "R16 - WMI",
+      id: "cours/r16",
+    },
 ],
   tp: [
     { type: "doc", label: "TP1 - Création en lot", id: "tp/tp1" },
