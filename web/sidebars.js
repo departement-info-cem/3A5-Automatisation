@@ -83,9 +83,17 @@ const sidebars = {
       label: "R16 - WMI",
       id: "cours/r16",
     },
-],
+    {
+      type: "doc",
+      label: "R17 - Active Directory",
+      id: "cours/r17",
+    },
+  ],
   tp: [
     { type: "doc", label: "TP1 - Création en lot", id: "tp/tp1" },
+  ],
+  labo: [
+    { type: "doc", label: "Laboratoire AD", id: "labo/labo-ad" },
   ],
 };
 
