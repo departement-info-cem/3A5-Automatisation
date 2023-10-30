@@ -184,6 +184,25 @@ Lorsque le serveur est promu en tant que contrôleur de domaine, le résolveur D
 ![Redirecteurs DNS](./assets/labo-ad/dns-redirecteurs.png)
 
 
+:::info
+Lorsqu'on installe le rôle ADDS, le gestionnaire de serveur de Windows affiche un petit drapeau pour nous inciter à en effectuer la promotion. Comme nous configurons le service par PowerShell, cette notification n'est pas nécessaire et peut même induire en erreur, en laissant faussement croire qu'il reste une étape à effectuer. Il suffit alors d'inscrire au registre que cette opération a été effectuée. 
+
+![Configuration post-déploiement ADDS](./assets/labo-ad/adds-postdeployment.png)
+
+Cette opération n'est pas obligatoire, mais elle est souhaitable dans la mesure où on utilise le gestionnaire de serveur.
+
+```powershell
+$ServerMgrCleanupSplat = @{
+    Path  = "HKLM:\SOFTWARE\Microsoft\ServerManager\Roles\10"
+    Name  = "ConfigurationState"
+    Value = 2
+}
+
+Set-ItemProperty @ServerMgrCleanupSplat
+```
+:::
+
+
 ### Étape 5: Installation du service DHCP
 
 Dans ce laboratoire, on souhaite installer, configurer et activer le service DHCP sur le contrôleur de domaine. Habituellement, en production, on préfère que le serveur DHCP soit sur une machine différente d'un contrôleur de domaine, pour des raisons de sécurité, mais dans un laboratoire on peut se permettre de tricher un peu.
@@ -346,7 +365,7 @@ $Masque       =  24               # Équivalent à 255.255.255.0 (/24)
 $Passerelle   = "192.168.21.1"    # L'adresse du pfSense
 $ResolveurDNS = "192.168.21.10"   # L'adresse du contrôleur de domaine
 
-New-NetIPAddress -IPaddress $Adresse -PrefixLength $Masque -DefaultGateway $Passerelle -AdressFamily "IPv4" -InterfaceAlias "Ethernet0"
+New-NetIPAddress -IPaddress $Adresse -PrefixLength $Masque -DefaultGateway $Passerelle -AddressFamily "IPv4" -InterfaceAlias "Ethernet0"
 Set-DnsClientServerAddress -ServerAddresses $ResolveurDNS -InterfaceAlias "Ethernet0"
 ```
 
