@@ -88,6 +88,16 @@ const sidebars = {
       label: "R17 - Active Directory",
       id: "cours/r17",
     },
+    {
+      type: "doc",
+      label: "R18 - Laboratoire AD",
+      id: "cours/r18",
+    },
+    {
+      type: "doc",
+      label: "R19 - Administration à distance",
+      id: "cours/r19",
+    },
   ],
   tp: [
     { type: "doc", label: "TP1 - Création en lot", id: "tp/tp1" },
