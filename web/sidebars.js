@@ -98,9 +98,15 @@ const sidebars = {
       label: "R19 - Administration à distance",
       id: "cours/r19",
     },
-  ],
+    {
+      type: "doc",
+      label: "R20 - Planification de tâches",
+      id: "cours/r20",
+    },
+],
   tp: [
     { type: "doc", label: "TP1 - Création en lot", id: "tp/tp1" },
+    { type: "doc", label: "TP2 - Script de déploiement", id: "tp/tp2" },
   ],
   labo: [
     { type: "doc", label: "Laboratoire AD", id: "labo/labo-ad" },
