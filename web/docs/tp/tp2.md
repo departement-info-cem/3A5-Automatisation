@@ -52,13 +52,15 @@ Dans la partie 2 du TP, vous aurez à configurer à distance l’ensemble des ma
 
 #### Conseils
 
-- Voici comment obtenir le nom d’utilisateur complet (incluant le domaine) :
+- Voici comment vérifier si un utilisateur dispose de droits d'administration ou non. Cette méthode tient compte du *nesting* de groupes.
 
     ```powershell
-    [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+    (whoami /groups /fo csv | ConvertFrom-Csv).sid -contains "S-1-5-32-544"
     ```
 
-- Voici une page de documentation qui risque de vous être utile : [Win32_ComputerSystem](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-computersystem)
+- Voici quelques classes WMI qui pourraient être utiles dans ce script : 
+    - [`Win32_ComputerSystem`](https://learn.microsoft.com/fr-ca/windows/win32/cimwin32prov/win32-computersystem)
+    - [`Win32_OperatingSystem`](https://learn.microsoft.com/fr-ca/windows/win32/cimwin32prov/win32-operatingsystem)
 
 - Utilisez la commande [`Start-Process`](https://learn.microsoft.com/fr-ca/powershell/module/microsoft.powershell.management/start-process?view=powershell-5.1) pour lancer votre commande ainsi que ses arguments.
  
