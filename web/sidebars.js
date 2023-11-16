@@ -100,8 +100,18 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "R20 - Planification de tâches",
-      id: "cours/r20",
+      label: "R21 - Travail sur le TP2",
+      id: "cours/r21",
+    },
+    {
+      type: "doc",
+      label: "R22 - Travail sur le TP2",
+      id: "cours/r22",
+    },
+    {
+      type: "doc",
+      label: "R23 - Tests et assurance qualité",
+      id: "cours/r23",
     },
 ],
   tp: [
