@@ -122,6 +122,7 @@ const sidebars = {
   tp: [
     { type: "doc", label: "TP1 - Création en lot", id: "tp/tp1" },
     { type: "doc", label: "TP2 - Script de déploiement", id: "tp/tp2" },
+    { type: "doc", label: "TP3 - Chuck Norris!", id: "tp/tp3" },
   ],
   labo: [
     { type: "doc", label: "Laboratoire AD", id: "labo/labo-ad" },
