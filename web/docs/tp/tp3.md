@@ -103,8 +103,62 @@ Le fichier JSON doit être structuré comme ceci :
 
 ## Critères d'évaluation
 
-*Grille d'évaluation à venir*
+L’évaluation de votre travail prendra en compte les critères suivants:
 
+| Critère d'évaluation | Pondération |
+| -- | -- |
+| Traitement des paramètres | 15% |
+| Utilisation de l'API | 15% |
+| Affichage du résultat | 10% |
+| Erreurs personnalisées | 10% |
+| Rubrique d'aide | 15% |
+| Gestion du fichier JSON | 15% |
+| Conception et style | 20% |
+| **Total** | **100%** |
+
+
+Voici les détails de ce qui sera évalué pour chaque critère:
+
+- Traitement des paramètres (15%)
+    - Les paramètres sont bien déclarés;
+    - Tous les scénarios sont détectés et le script exécute seulement le code correspondant.
+
+- Utilisation de l'API (15%)
+    - Les URI sont bien formés conformément à la documentation de l'API;
+    - Les requêtes sont bien passées avec les commandes appropriées;
+    - Le contenu des réponses de l'API est bien interprété.
+
+- Affichage du résultat (10%)
+    - L'affichage correspond en tout point aux captures d'écran demandées dans l'énoncé;
+    - Les blagues sont accompagnées de leur numéro d'identification entre crochets;
+    - Les listes sont précédées d'une puce (-);
+    - Aucune autre information n'est affichée dans la console.
+
+- Erreurs personnalisées (10%)
+    - Les erreurs sont implémentées pour les ID inexistants et pour les catégories inexistantes;
+    - Les erreurs sont des vraies erreurs PowerShell (et non du simple texte rouge envoyé dans le terminal);
+    - Les erreurs sont construites conformément à l'énoncé.
+
+- Rubrique d'aide (15%)
+    - Le bloc d'aide est déclaré selon les normes de PowerShell;
+    - Tous les paramètres y sont documentés;
+    - Les exemples choisis sont pertinents.
+
+- Gestion du fichier JSON (15%)
+    - Le fichier JSON possède la même structure que dans l'énoncé;
+    - Le script crée automatiquement le fichier JSON s'il n'existe pas;
+    - Les blagues s'ajoutent au fichier si elles n'y sont pas présentes;
+    - Le compteur est incrémenté pour les blagues qui sont déjà présentes;
+    - Les blagues qui passent plusieurs fois ne sont pas listées en double dans le fichier;
+    - Si plusieurs blagues sont affichées en même temps (avec la fonction de recherche), elles sont toutes ajoutées au fichier.
+
+- Conception et style (20%)
+    - Logique générale du script;
+    - Pas d'utilisation de paramètres positionnels ou d'alias;
+    - Pas de chemins hard-codés;
+    - Pas de code redondant, d'affectations inutiles, d'évaluation tautologiques, etc.;
+    - Choix approprié des noms des variables, des fonctions, etc.;
+    - Style et lisibilité, qualité des commentaires, indentation et espacement du code.
 
 
 ---
